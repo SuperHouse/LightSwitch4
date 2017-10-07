@@ -1,4 +1,4 @@
-Home Automation Light Switch (4-Button)
+Home Automation Light Switch (4 Button)
 ========================================
 Copyright 2014 SuperHouse Automation Pty Ltd  
 SuperHouse site:  <www.superhouse.tv>  
