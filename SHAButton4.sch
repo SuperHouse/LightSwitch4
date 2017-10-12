@@ -209,10 +209,10 @@
 <pad name="8" x="-3.5" y="4" drill="0.8" diameter="1.4224"/>
 </package>
 <package name="SWITCH-SPST-ILLUMINATED">
-<pad name="4" x="0" y="-5" drill="1.85" diameter="2.4"/>
-<pad name="3" x="0" y="5" drill="1.85" diameter="2.4" rot="R90"/>
-<pad name="1" x="4.2" y="0" drill="1.85" diameter="2.4" rot="R90"/>
-<pad name="2" x="-4.2" y="0" drill="1.85" diameter="2.4" rot="R90"/>
+<pad name="4" x="0" y="-5" drill="2"/>
+<pad name="3" x="0" y="5" drill="2" diameter="2.54" rot="R90"/>
+<pad name="1" x="4.2" y="0" drill="2" rot="R90" first="yes"/>
+<pad name="2" x="-4.2" y="0" drill="2" rot="R90"/>
 <circle x="0" y="0" radius="5.35" width="0.4064" layer="51"/>
 <text x="-2.49" y="1.62" size="1.016" layer="25">&gt;NAME</text>
 <text x="-3.03" y="-2.92" size="1.016" layer="27">&gt;VALUE</text>
