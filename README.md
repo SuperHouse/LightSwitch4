@@ -1,6 +1,6 @@
 Home Automation Light Switch (4 Button)
 ========================================
-Copyright 2014 SuperHouse Automation Pty Ltd  
+Copyright 2014-2017 SuperHouse Automation Pty Ltd  
 SuperHouse site:  <www.superhouse.tv>  
 
 Illuminated push button breakout with an RJ45 socket, for mounting
