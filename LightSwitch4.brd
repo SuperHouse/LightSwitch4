@@ -166,7 +166,7 @@
 <wire x1="0" y1="44" x2="40" y2="44" width="0" layer="20"/>
 <wire x1="40" y1="44" x2="40" y2="0" width="0" layer="20"/>
 <text x="39" y="4" size="1.1176" layer="21" font="vector" ratio="15" rot="R90">(C)2017 SuperHouse Automation Pty Ltd</text>
-<text x="35.4452" y="41.8486" size="0.9144" layer="21" font="vector" ratio="15">v2.1</text>
+<text x="35.4452" y="41.8486" size="0.9144" layer="21" font="vector" ratio="15">v2.2</text>
 <text x="19.8412" y="36.8646" size="1.27" layer="21" font="vector" ratio="15" align="center">4-Button
 Light Switch</text>
 <text x="2" y="3" size="1.6764" layer="21" font="vector" ratio="15" rot="R90">www.superhouse.tv/lightswitch</text>
@@ -215,19 +215,19 @@ Light Switch</text>
 <wire x1="-7.5" y1="7" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="-7.5" y1="-6" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
 <wire x1="7.5" y1="-10" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
-<pad name="1" x="3.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="2" x="2.5" y="4" drill="0.8" diameter="1.4224"/>
-<pad name="3" x="1.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="4" x="0.5" y="4" drill="0.8" diameter="1.4224"/>
-<pad name="5" x="-0.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="6" x="-1.5" y="4" drill="0.8" diameter="1.4224"/>
-<hole x="-7.5" y="0" drill="2.5"/>
-<hole x="7.5" y="0" drill="2.5"/>
+<pad name="1" x="3.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="2.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="1.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="0.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<pad name="5" x="-0.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="-1.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<hole x="-7.5" y="0" drill="2.4"/>
+<hole x="7.5" y="0" drill="2.4"/>
 <text x="-2.54" y="-1.65" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.92" size="0.8128" layer="27">&gt;VALUE</text>
 <wire x1="7.5" y1="-6" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
-<pad name="7" x="-2.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="8" x="-3.5" y="4" drill="0.8" diameter="1.4224"/>
+<pad name="7" x="-2.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="8" x="-3.5" y="4.84" drill="0.8" diameter="1.4224"/>
 </package>
 <package name="SWITCH-SPST-ILLUMINATED">
 <pad name="4" x="0" y="-5" drill="1" diameter="1.778" shape="long"/>
@@ -481,10 +481,10 @@ design rules under a new name.</description>
 <element name="SW2" library="freetronics-jon" package="SWITCH-SPST-ILLUMINATED" value="SWITCH-SPST-ILLUMINATED" x="32" y="7" rot="MR0"/>
 <element name="SW3" library="freetronics-jon" package="SWITCH-SPST-ILLUMINATED" value="SWITCH-SPST-ILLUMINATED" x="8" y="37" rot="MR0"/>
 <element name="SW4" library="freetronics-jon" package="SWITCH-SPST-ILLUMINATED" value="SWITCH-SPST-ILLUMINATED" x="8" y="7" rot="MR0"/>
-<element name="R1" library="freetronics-jon" package="0603" value="3K3" x="23" y="39.5"/>
-<element name="R2" library="freetronics-jon" package="0603" value="3K3" x="26" y="3"/>
-<element name="R3" library="freetronics-jon" package="0603" value="3K3" x="17" y="39.5" rot="R180"/>
-<element name="R4" library="freetronics-jon" package="0603" value="3K3" x="14" y="3" rot="R180"/>
+<element name="R1" library="freetronics-jon" package="0603" value="4K7" x="23" y="39.5"/>
+<element name="R2" library="freetronics-jon" package="0603" value="4K7" x="26" y="3"/>
+<element name="R3" library="freetronics-jon" package="0603" value="4K7" x="17" y="39.5" rot="R180"/>
+<element name="R4" library="freetronics-jon" package="0603" value="4K7" x="14" y="3" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -516,40 +516,41 @@ design rules under a new name.</description>
 <signal name="+12V">
 <contactref element="S1" pad="5"/>
 <contactref element="S1" pad="4"/>
-<wire x1="19.5" y1="29" x2="20.5" y2="31" width="0.6096" layer="1"/>
+<wire x1="19.5" y1="29.3" x2="20.5" y2="31.84" width="0.6096" layer="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R3" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R1" pad="1"/>
 <wire x1="22.238" y1="39.5" x2="17.762" y2="39.5" width="0.508" layer="1"/>
-<wire x1="20.5" y1="31" x2="20.5" y2="34.5" width="0.508" layer="1"/>
+<wire x1="20.5" y1="31.84" x2="20.5" y2="34.5" width="0.508" layer="1"/>
 <wire x1="22.238" y1="36.238" x2="22.238" y2="39.5" width="0.508" layer="1"/>
 <wire x1="20.5" y1="34.5" x2="22.238" y2="36.238" width="0.508" layer="1"/>
 <wire x1="19.5" y1="4" x2="20.5" y2="3" width="0.508" layer="1"/>
 <wire x1="20.5" y1="3" x2="25.238" y2="3" width="0.508" layer="1"/>
-<wire x1="19.5" y1="29" x2="19.5" y2="4" width="0.508" layer="1"/>
+<wire x1="19.5" y1="29.3" x2="19.5" y2="4" width="0.508" layer="1"/>
 <wire x1="14.762" y1="3" x2="18.5" y2="3" width="0.508" layer="1"/>
 <wire x1="18.5" y1="3" x2="19.5" y2="4" width="0.508" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="S1" pad="1"/>
 <contactref element="SW1" pad="3"/>
-<wire x1="23.5" y1="29" x2="30" y2="35.5" width="0.508" layer="16"/>
-<wire x1="30" y1="35.5" x2="30" y2="38.5" width="0.508" layer="16"/>
+<wire x1="30" y1="38.5" x2="30" y2="35.5" width="0.508" layer="16"/>
 <wire x1="30" y1="38.5" x2="32" y2="40.5" width="0.508" layer="16"/>
 <wire x1="32" y1="40.5" x2="32" y2="42" width="0.508" layer="16"/>
+<wire x1="30" y1="35.5" x2="23.8" y2="29.3" width="0.508" layer="16"/>
+<wire x1="23.8" y1="29.3" x2="23.5" y2="29.3" width="0.508" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="S1" pad="2"/>
 <contactref element="SW2" pad="3"/>
 <wire x1="32" y1="12" x2="32" y2="27" width="0.508" layer="1"/>
-<wire x1="32" y1="27" x2="28" y2="31" width="0.508" layer="1"/>
-<wire x1="28" y1="31" x2="22.5" y2="31" width="0.508" layer="1"/>
+<wire x1="27.16" y1="31.84" x2="22.5" y2="31.84" width="0.508" layer="1"/>
+<wire x1="32" y1="27" x2="27.16" y2="31.84" width="0.508" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="S1" pad="3"/>
 <contactref element="SW3" pad="3"/>
-<wire x1="21.5" y1="29" x2="21.5" y2="24.5" width="0.508" layer="16"/>
+<wire x1="21.5" y1="29.3" x2="21.5" y2="24.5" width="0.508" layer="16"/>
 <wire x1="21.5" y1="24.5" x2="20" y2="23" width="0.508" layer="16"/>
 <wire x1="20" y1="23" x2="6" y2="23" width="0.508" layer="16"/>
 <wire x1="6" y1="23" x2="4" y2="25" width="0.508" layer="16"/>
@@ -564,9 +565,9 @@ design rules under a new name.</description>
 <contactref element="SW4" pad="3"/>
 <wire x1="8" y1="12" x2="8" y2="28" width="0.508" layer="1"/>
 <wire x1="8" y1="28" x2="13.5" y2="33.5" width="0.508" layer="1"/>
-<wire x1="13.5" y1="33.5" x2="17.5" y2="33.5" width="0.508" layer="1"/>
-<wire x1="17.5" y1="33.5" x2="18.5" y2="32.5" width="0.508" layer="1"/>
-<wire x1="18.5" y1="32.5" x2="18.5" y2="31" width="0.508" layer="1"/>
+<wire x1="18" y1="33.5" x2="18.5" y2="33" width="0.508" layer="1"/>
+<wire x1="18.5" y1="33" x2="18.5" y2="31.84" width="0.508" layer="1"/>
+<wire x1="13.5" y1="33.5" x2="18" y2="33.5" width="0.508" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="SW2" pad="2"/>

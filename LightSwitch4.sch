@@ -196,19 +196,19 @@
 <wire x1="-7.5" y1="7" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="-7.5" y1="-6" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
 <wire x1="7.5" y1="-10" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
-<pad name="1" x="3.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="2" x="2.5" y="4" drill="0.8" diameter="1.4224"/>
-<pad name="3" x="1.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="4" x="0.5" y="4" drill="0.8" diameter="1.4224"/>
-<pad name="5" x="-0.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="6" x="-1.5" y="4" drill="0.8" diameter="1.4224"/>
-<hole x="-7.5" y="0" drill="2.5"/>
-<hole x="7.5" y="0" drill="2.5"/>
+<pad name="1" x="3.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="2.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="1.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="0.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<pad name="5" x="-0.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="-1.5" y="4.84" drill="0.8" diameter="1.4224"/>
+<hole x="-7.5" y="0" drill="2.4"/>
+<hole x="7.5" y="0" drill="2.4"/>
 <text x="-2.54" y="-1.65" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.92" size="0.8128" layer="27">&gt;VALUE</text>
 <wire x1="7.5" y1="-6" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
-<pad name="7" x="-2.5" y="2" drill="0.8" diameter="1.4224"/>
-<pad name="8" x="-3.5" y="4" drill="0.8" diameter="1.4224"/>
+<pad name="7" x="-2.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="8" x="-3.5" y="4.84" drill="0.8" diameter="1.4224"/>
 </package>
 <package name="SWITCH-SPST-ILLUMINATED">
 <pad name="4" x="0" y="-5" drill="1" diameter="1.778" shape="long"/>
@@ -656,10 +656,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <part name="SW2" library="freetronics-jon" deviceset="SWITCH-SPST-ILLUMINATED" device=""/>
 <part name="SW3" library="freetronics-jon" deviceset="SWITCH-SPST-ILLUMINATED" device=""/>
 <part name="SW4" library="freetronics-jon" deviceset="SWITCH-SPST-ILLUMINATED" device=""/>
-<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="3K3"/>
-<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="3K3"/>
-<part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="3K3"/>
-<part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="3K3"/>
+<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="4K7"/>
+<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="4K7"/>
+<part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="4K7"/>
+<part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="4K7"/>
 </parts>
 <sheets>
 <sheet>
@@ -674,7 +674,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <text x="48.26" y="106.68" size="1.778" layer="97">GND</text>
 <text x="48.26" y="104.14" size="1.778" layer="97">GND</text>
 <text x="139.7" y="20.32" size="3.048" layer="94">Home Automation Light Switch (4 Button)</text>
-<text x="165.1" y="14.478" size="1.778" layer="94">V2.1 (2018-03-26)</text>
+<text x="165.1" y="14.478" size="1.778" layer="94">V2.2 (2018-04-05)</text>
 <text x="139.7" y="14.478" size="1.778" layer="94">SKU: SWITCH4</text>
 <text x="139.446" y="9.398" size="1.778" layer="94">(C)2017-2018 SuperHouse Automation Pty Ltd: www.superhouse.tv</text>
 <text x="139.446" y="6.35" size="1.778" layer="94">Released under the TAPR Open Hardware License: www.tapr.org/ohl</text>
