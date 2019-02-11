@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -190,6 +190,7 @@
 <library name="freetronics-jon">
 <packages>
 <package name="RJ45">
+<description>Jaycar version</description>
 <wire x1="7.5" y1="-10" x2="7.5" y2="-6" width="0.2032" layer="51"/>
 <wire x1="7.5" y1="-6" x2="7.5" y2="7" width="0.2032" layer="21"/>
 <wire x1="7.5" y1="7" x2="-7.5" y2="7" width="0.2032" layer="21"/>
@@ -410,6 +411,44 @@ type 0309, grid 2.5 mm</description>
 <rectangle x1="0.0508" y1="-0.3048" x2="0.635" y2="0.3048" layer="21"/>
 <rectangle x1="0.3048" y1="-0.3048" x2="0.889" y2="0.3048" layer="21"/>
 </package>
+<package name="RJ45CH">
+<description>Chinese version</description>
+<wire x1="7.5" y1="-10" x2="7.5" y2="-6" width="0.2032" layer="51"/>
+<wire x1="7.5" y1="-6" x2="7.5" y2="7" width="0.2032" layer="21"/>
+<wire x1="7.5" y1="7" x2="-7.5" y2="7" width="0.2032" layer="21"/>
+<wire x1="-7.5" y1="7" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-7.5" y1="-6" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
+<wire x1="7.5" y1="-10" x2="-7.5" y2="-10" width="0.2032" layer="51"/>
+<pad name="1" x="3.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="2.5" y="5.08" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="1.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="0.5" y="5.08" drill="0.8" diameter="1.4224"/>
+<pad name="5" x="-0.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="-1.5" y="5.08" drill="0.8" diameter="1.4224"/>
+<hole x="-7.5" y="0" drill="2.4"/>
+<hole x="7.5" y="0" drill="2.4"/>
+<text x="-2.54" y="-1.65" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.92" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="7.5" y1="-6" x2="-7.5" y2="-6" width="0.2032" layer="21"/>
+<pad name="7" x="-2.5" y="2.3" drill="0.8" diameter="1.4224"/>
+<pad name="8" x="-3.5" y="5.08" drill="0.8" diameter="1.4224"/>
+</package>
+<package name="0201">
+<wire x1="-0.7" y1="0.3" x2="0.7" y2="0.3" width="0.0508" layer="39"/>
+<wire x1="0.7" y1="0.3" x2="0.7" y2="-0.3" width="0.0508" layer="39"/>
+<wire x1="0.7" y1="-0.3" x2="-0.7" y2="-0.3" width="0.0508" layer="39"/>
+<wire x1="-0.7" y1="-0.3" x2="-0.7" y2="0.3" width="0.0508" layer="39"/>
+<wire x1="-0.2" y1="0.1" x2="0.2" y2="0.1" width="0.1016" layer="51"/>
+<wire x1="-0.2" y1="-0.1" x2="0.2" y2="-0.1" width="0.1016" layer="51"/>
+<smd name="1" x="-0.35" y="0" dx="0.45" dy="0.4" layer="1" roundness="20"/>
+<smd name="2" x="0.35" y="0" dx="0.45" dy="0.4" layer="1" roundness="20"/>
+<text x="-0.489" y="0.35" size="0.254" layer="25" font="vector">&gt;NAME</text>
+<text x="-0.616" y="-0.6" size="0.254" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.35" y1="-0.15" x2="-0.1" y2="0.15" layer="51"/>
+<rectangle x1="0.1" y1="-0.15" x2="0.35" y2="0.15" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M08">
@@ -493,7 +532,22 @@ type 0309, grid 2.5 mm</description>
 <gate name="G$1" symbol="M08" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RJ45">
+<device name="JC" package="RJ45">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CH" package="RJ45CH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -634,6 +688,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <technology name=""/>
 </technologies>
 </device>
+<device name="0201" package="0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -651,7 +714,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </classes>
 <parts>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="S1" library="freetronics-jon" deviceset="RJ45" device=""/>
+<part name="S1" library="freetronics-jon" deviceset="RJ45" device="JC"/>
 <part name="SW1" library="freetronics-jon" deviceset="SWITCH-SPST-ILLUMINATED" device=""/>
 <part name="SW2" library="freetronics-jon" deviceset="SWITCH-SPST-ILLUMINATED" device=""/>
 <part name="SW3" library="freetronics-jon" deviceset="SWITCH-SPST-ILLUMINATED" device=""/>
@@ -684,16 +747,45 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <frame x1="137.16" y1="5.08" x2="243.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 </plain>
 <instances>
-<instance part="GND3" gate="1" x="157.48" y="88.9"/>
-<instance part="S1" gate="G$1" x="60.96" y="111.76" rot="MR180"/>
-<instance part="SW1" gate="G$1" x="109.22" y="121.92"/>
-<instance part="SW2" gate="G$1" x="109.22" y="101.6"/>
-<instance part="SW3" gate="G$1" x="149.86" y="121.92"/>
-<instance part="SW4" gate="G$1" x="149.86" y="101.6"/>
-<instance part="R1" gate="G$1" x="96.52" y="129.54"/>
-<instance part="R2" gate="G$1" x="96.52" y="109.22"/>
-<instance part="R3" gate="G$1" x="137.16" y="129.54"/>
-<instance part="R4" gate="G$1" x="137.16" y="109.22"/>
+<instance part="GND3" gate="1" x="157.48" y="88.9" smashed="yes">
+<attribute name="VALUE" x="154.94" y="86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="S1" gate="G$1" x="60.96" y="111.76" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="58.42" y="127" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="58.42" y="100.838" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="SW1" gate="G$1" x="109.22" y="121.92" smashed="yes">
+<attribute name="NAME" x="105.41" y="134.62" size="1.016" layer="95"/>
+<attribute name="VALUE" x="105.41" y="133.35" size="1.016" layer="96"/>
+</instance>
+<instance part="SW2" gate="G$1" x="109.22" y="101.6" smashed="yes">
+<attribute name="NAME" x="105.41" y="114.3" size="1.016" layer="95"/>
+<attribute name="VALUE" x="105.41" y="113.03" size="1.016" layer="96"/>
+</instance>
+<instance part="SW3" gate="G$1" x="149.86" y="121.92" smashed="yes">
+<attribute name="NAME" x="146.05" y="134.62" size="1.016" layer="95"/>
+<attribute name="VALUE" x="146.05" y="133.35" size="1.016" layer="96"/>
+</instance>
+<instance part="SW4" gate="G$1" x="149.86" y="101.6" smashed="yes">
+<attribute name="NAME" x="146.05" y="114.3" size="1.016" layer="95"/>
+<attribute name="VALUE" x="146.05" y="113.03" size="1.016" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="96.52" y="129.54" smashed="yes">
+<attribute name="NAME" x="92.71" y="131.0386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="126.238" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="96.52" y="109.22" smashed="yes">
+<attribute name="NAME" x="92.71" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="105.918" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="137.16" y="129.54" smashed="yes">
+<attribute name="NAME" x="133.35" y="131.0386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.35" y="126.238" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="137.16" y="109.22" smashed="yes">
+<attribute name="NAME" x="133.35" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.35" y="105.918" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
